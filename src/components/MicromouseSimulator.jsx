@@ -188,7 +188,7 @@ const MicromouseSimulator = () => {
                         const value = e.target.value;
                         setSize({
                             ...size,
-                            rows: value === "" ? "" : Math.max(5, Math.min(20, parseInt(value, 10) || 0)),
+                            rows: value === "" ? "" :  Math.min(20, parseInt(value, 10 || 0)),
                         });
                     }}
                     className="border p-2"
@@ -203,7 +203,7 @@ const MicromouseSimulator = () => {
                         const value = e.target.value;
                         setSize({
                           ...size,
-                          cols: value === "" ? "" : Math.max(5, Math.min(20, parseInt(value, 10) || 0)),
+                          cols: value === "" ? "" :  Math.min(20, parseInt(value, 10 || 0)),
                         });
                       }}
                     className="border p-2"
